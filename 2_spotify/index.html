@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- top section -->
+    <div class="top-bar">
+        <img src="images/spotify-log.webp" alt="spotify" width="90" height="40">
+    </div>
+
+    <!-- middle section -->
+    <div class="middle-part">
+        
+        <div class="middle-box">
+            <div class="left-box">
+                <h2> Best of NCS - No Copyright Sounds</h2>
+                <ul class="music-list-ul">
+                <li class="music-list-li" data-src="audio\Chaiyya Chaiyya - Dil Se 128 Kbps.mp3" data-duration="06:55">
+                    <button class="song-play-btn">▶</button> Chaiya Chaiya
+                    <span class="duration">06:55</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Dupatta Tera Nau Rang Da - Partner 128 Kbps.mp3" data-duration="05:03">
+                    <button class="song-play-btn">▶</button>Dupatta Tera Nau Rang da
+                    <span class="duration">05:03</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Millionaire - Glory 128 Kbps.mp3" data-duration="03:19">
+                    <button class="song-play-btn">▶</button>Millionaire
+                    <span class="duration">03:19</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Brown Rang - International Villager 128 Kbps.mp3" data-duration="02:59">
+                    <button class="song-play-btn">▶</button>Brown Rang
+                    <span class="duration">02:59</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Hass Hass - Diljit Dosanjh 128 Kbps.mp3" data-duration="02:33">
+                    <button class="song-play-btn">▶</button>Hass Hass
+                    <span class="duration">02:33</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Ishq Nachaawe Kho Gaye Hum Kahan 128 Kbps.mp3" data-duration="03:41">
+                    <button class="song-play-btn">▶</button>Ishq Nachaawe
+                    <span class="duration">03:41</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Darkhaast - Shivaay 128 Kbps.mp3" data-duration="06:14">
+                    <button class="song-play-btn">▶</button>Darkhast
+                    <span class="duration">06:14</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Dil Haara - Tashan 128 Kbps.mp3" data-duration="05:52">
+                    <button class="song-play-btn">▶</button>Dil Hara
+                    <span class="duration">05:52</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Senorita - Zindagi Na Milegi Dobara 128 Kbps.mp3" data-duration="03:51">
+                    <button class="song-play-btn">▶</button>Senorita
+                    <span class="duration">03:51</span>
+                </li>
+                <li class="music-list-li" data-src="audio\Nagada Nagada - Jab We Met 128 Kbps.mp3" data-duration="03:50">
+                    <button class="song-play-btn">▶</button>Nagada Nagada
+                    <span class="duration">03:50</span>
+                </li>
+            </ul>
+            </div>
+            <div class="right-box">
+                <img src="images/singer-image.jpg" alt="singer" class="singer">
+            </div>          
+            
+        </div>
+    </div>
+    <!-- bottom section -->
+    <div class="bottom-section">
+        <div class="info-bar">
+            <div id="currentSong">Now Playing: </div>            
+            <input type="range" id="progressBar" value="0" step="1">
+            <div id="timeDisplay">0:00 / 0:00</div>
+        </div>
+        
+
+        <div class="controls">
+            <button id="prevBtn">⏮</button>
+            <button id="playPauseBtn">▶</button>
+            <button id="nextBtn">⏭</button>
+        </div>
+        <audio id="audioPlayer" class="audio-box"></audio>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
